@@ -97,7 +97,7 @@ var texmlInitiateAICall = requestflag.WithInnerFlags(cli.Command{
 		},
 		&requestflag.Flag[string]{
 			Name:     "detection-mode",
-			Usage:    "Allows you to choose between Premium and Standard detections.",
+			Usage:    "Allows you to choose between Regular, Premium, and PremiumCallScreening detections. See https://developers.telnyx.com/docs/voice/programmable-voice/answering-machine-detection",
 			Default:  "Regular",
 			BodyPath: "DetectionMode",
 		},
@@ -106,6 +106,11 @@ var texmlInitiateAICall = requestflag.WithInnerFlags(cli.Command{
 			Usage:    "Enables Answering Machine Detection.",
 			Default:  "Disable",
 			BodyPath: "MachineDetection",
+		},
+		&requestflag.Flag[int64]{
+			Name:     "machine-detection-prompt-end-timeout",
+			Usage:    "Silence duration threshold after a call screening prompt before ending prompt detection, in milliseconds. Used when `DetectionMode` is `PremiumCallScreening`.",
+			BodyPath: "MachineDetectionPromptEndTimeout",
 		},
 		&requestflag.Flag[int64]{
 			Name:     "machine-detection-silence-timeout",
