@@ -3108,6 +3108,15 @@ func init() {
 				},
 			},
 			{
+				Name:     "whatsapp:user-data",
+				Category: "API RESOURCE",
+				Suggest:  true,
+				Commands: []*cli.Command{
+					&whatsappUserDataRetrieve,
+					&whatsappUserDataUpdate,
+				},
+			},
+			{
 				Name:     "whatsapp-message-templates",
 				Category: "API RESOURCE",
 				Suggest:  true,
