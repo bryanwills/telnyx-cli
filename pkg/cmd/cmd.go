@@ -3303,6 +3303,7 @@ func init() {
 					&dirUpdate,
 					&dirList,
 					&dirDelete,
+					&dirCreateLoa,
 					&dirListDocumentTypes,
 					&dirListInfringementClaims,
 					&dirSubmit,
