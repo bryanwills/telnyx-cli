@@ -3225,9 +3225,9 @@ func init() {
 				Category: "API RESOURCE",
 				Suggest:  true,
 				Commands: []*cli.Command{
-					&enterprisesReputationRemediationCreate,
 					&enterprisesReputationRemediationRetrieve,
 					&enterprisesReputationRemediationList,
+					&enterprisesReputationRemediationSubmit,
 				},
 			},
 			{
@@ -3254,7 +3254,7 @@ func init() {
 				Category: "API RESOURCE",
 				Suggest:  true,
 				Commands: []*cli.Command{
-					&termsOfServiceRetrieveInfo,
+					&termsOfServiceInfo,
 					&termsOfServiceStatus,
 				},
 			},
@@ -3358,6 +3358,22 @@ func init() {
 				},
 			},
 			{
+				Name:     "sip-registration-status",
+				Category: "API RESOURCE",
+				Suggest:  true,
+				Commands: []*cli.Command{
+					&sipRegistrationStatusRetrieve,
+				},
+			},
+			{
+				Name:     "speech-to-text",
+				Category: "API RESOURCE",
+				Suggest:  true,
+				Commands: []*cli.Command{
+					&speechToTextListProviders,
+				},
+			},
+			{
 				Name:     "uac-connections",
 				Category: "API RESOURCE",
 				Suggest:  true,
@@ -3375,22 +3391,6 @@ func init() {
 				Suggest:  true,
 				Commands: []*cli.Command{
 					&uacConnectionsActionsCheckRegistrationStatus,
-				},
-			},
-			{
-				Name:     "sip-registration-status",
-				Category: "API RESOURCE",
-				Suggest:  true,
-				Commands: []*cli.Command{
-					&sipRegistrationStatusRetrieve,
-				},
-			},
-			{
-				Name:     "speech-to-text",
-				Category: "API RESOURCE",
-				Suggest:  true,
-				Commands: []*cli.Command{
-					&speechToTextListProviders,
 				},
 			},
 			{
