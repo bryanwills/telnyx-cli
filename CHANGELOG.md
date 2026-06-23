@@ -1,5 +1,39 @@
 # Changelog
 
+## 0.18.0 (2026-06-23)
+
+Full Changelog: [v0.17.0...v0.18.0](https://github.com/team-telnyx/telnyx-cli/compare/v0.17.0...v0.18.0)
+
+### Features
+
+* Add sip region to scheduled events ([65e80fc](https://github.com/team-telnyx/telnyx-cli/commit/65e80fc5a7f4cce951ba664c9ab67cb4aa0f4932))
+* add transcriptions-search API spec (dev/external) ([e847812](https://github.com/team-telnyx/telnyx-cli/commit/e847812bc14ee2fcc558763e0267aeac24bfe5f6))
+* branded-calling: drop 'simplified'/'no enterprise_id' framing from DIR endpoints ([4729fe8](https://github.com/team-telnyx/telnyx-cli/commit/4729fe80a79483d5f49c9a7163cf5bb15b8076a6))
+* branded-calling: sync PATCH /dir/{dir_id} spec with deployed service behavior ([174861d](https://github.com/team-telnyx/telnyx-cli/commit/174861d9caac9d81a1cb538352776b22c0f42e5f))
+* **branded-calling:** document LOA (DIR) + reputation remediation endpoints ([1ea3460](https://github.com/team-telnyx/telnyx-cli/commit/1ea34603db3e3294d3ccb72af28833def870a353))
+* ENGDESK-51290: Add Aicoustic NS engines to portal backend ([5cd814a](https://github.com/team-telnyx/telnyx-cli/commit/5cd814a1b7e826b747a523dea3fa3979e050a3c8))
+* Fix cross-product leakage: de-dup shared enterprise/ToS endpoints + neutralize descriptions ([7d28af0](https://github.com/team-telnyx/telnyx-cli/commit/7d28af0545e0c0ffc97c20c710d1d82270992a4b))
+* NUM-6470: Add branded-calling-v2 OpenAPI specs (external + internal) ([c358d2a](https://github.com/team-telnyx/telnyx-cli/commit/c358d2a6230befd2264efb0cb6b1e669bf10e8f5))
+* **spec:** backfill parameter descriptions to 100% coverage ([fe2eca3](https://github.com/team-telnyx/telnyx-cli/commit/fe2eca3e36c4460740db49c5ae5ed6bb40dd9780))
+* specs: add GET /terms_of_service/info (branded-calling + number-reputation) ([f1bda0a](https://github.com/team-telnyx/telnyx-cli/commit/f1bda0a4e23a93775534549746f05150cb59f959))
+* specs: drop legacy plain filter params (keep filter[] canonical) on list endpoints ([68c0e58](https://github.com/team-telnyx/telnyx-cli/commit/68c0e58335b8f1d4fdccaaae2d9c8810e001e3a1))
+* specs: remove em dashes from branded-calling + number-reputation descriptions ([238fb4a](https://github.com/team-telnyx/telnyx-cli/commit/238fb4a6c1e15942fe541c2a06e54a411bfe9c05))
+* TELAPPS-719: add Inworld inworld-tts-2 model + delivery_mode to call-control voice settings ([2830728](https://github.com/team-telnyx/telnyx-cli/commit/28307283f86ca9283613ff6e934fd3ce964c934e))
+
+
+### Bug Fixes
+
+* **number-reputation:** remediation contact_email is optional ([0b2476e](https://github.com/team-telnyx/telnyx-cli/commit/0b2476ee7249402cae57952be707bdafe7a9752d))
+* restore stainless.yml — only remove production_repo for Python ([db83848](https://github.com/team-telnyx/telnyx-cli/commit/db8384832a243ff8e97a5c9b69165b0e0e489924))
+
+
+### Chores
+
+* **internal:** codegen related update ([e22abfb](https://github.com/team-telnyx/telnyx-cli/commit/e22abfb712ad5207119fe5b02fa78a78d06adc4b))
+* **internal:** codegen related update ([1349fc5](https://github.com/team-telnyx/telnyx-cli/commit/1349fc5c499d1a9580a4e1d2b4045db57f07a8ec))
+* update example date in audit-logs for pipeline sync ([6c9cff3](https://github.com/team-telnyx/telnyx-cli/commit/6c9cff358795d8d0815e9838ab186328ccbcb422))
+* update example date in audit-logs for SaaS rebuild ([b9bbdcb](https://github.com/team-telnyx/telnyx-cli/commit/b9bbdcbb2f82d86fa8347300192b8271b22b09ff))
+
 ## 0.17.0 (2026-06-04)
 
 Full Changelog: [v0.16.0...v0.17.0](https://github.com/team-telnyx/telnyx-cli/compare/v0.16.0...v0.17.0)
