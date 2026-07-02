@@ -281,6 +281,7 @@ func init() {
 				Suggest:  true,
 				Commands: []*cli.Command{
 					&aiCreateResponseDeprecated,
+					&aiRetrieveConversationHistories,
 					&aiRetrieveModels,
 					&aiSummarize,
 				},
@@ -3086,6 +3087,7 @@ func init() {
 					&whatsappPhoneNumbersList,
 					&whatsappPhoneNumbersDelete,
 					&whatsappPhoneNumbersResendVerification,
+					&whatsappPhoneNumbersRetrieveConversationWindow,
 					&whatsappPhoneNumbersVerify,
 				},
 			},
@@ -3393,6 +3395,26 @@ func init() {
 					&dirPhoneNumbersList,
 					&dirPhoneNumbersAdd,
 					&dirPhoneNumbersRemove,
+				},
+			},
+			{
+				Name:     "dir:references",
+				Category: "API RESOURCE",
+				Suggest:  true,
+				Commands: []*cli.Command{
+					&dirReferencesCreate,
+					&dirReferencesUpdate,
+					&dirReferencesList,
+				},
+			},
+			{
+				Name:     "dir:verify-email",
+				Category: "API RESOURCE",
+				Suggest:  true,
+				Commands: []*cli.Command{
+					&dirVerifyEmailCreate,
+					&dirVerifyEmailList,
+					&dirVerifyEmailConfirm,
 				},
 			},
 			{
