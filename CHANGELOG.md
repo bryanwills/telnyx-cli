@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.21.0](https://github.com/team-telnyx/telnyx-cli/compare/v0.20.0...v0.21.0) (2026-07-03)
+
+
+### Bug Fixes
+
+* **release:** take first Release-As match (multiline output broke GITHUB_OUTPUT) ([#54](https://github.com/team-telnyx/telnyx-cli/issues/54)) ([1ba5160](https://github.com/team-telnyx/telnyx-cli/commit/1ba5160a07092c4c5ad4b120e7aefdbc579aa383))
+
 ## [0.20.0](https://github.com/team-telnyx/telnyx-cli/compare/v0.19.0...v0.20.0) (2026-07-03)
 
 
