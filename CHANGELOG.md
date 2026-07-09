@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.22.0](https://github.com/team-telnyx/telnyx-cli/compare/v0.21.0...v0.22.0) (2026-07-09)
+
+
+### Bug Fixes
+
+* **release:** ghost guard also verifies the GitHub Release exists ([#60](https://github.com/team-telnyx/telnyx-cli/issues/60)) ([da8cf61](https://github.com/team-telnyx/telnyx-cli/commit/da8cf61a3291d19c89c4ec97fc3013bdba2ed0cc))
+* **release:** scan next's commits in release-pr (stop depending on master hotfixes) ([#58](https://github.com/team-telnyx/telnyx-cli/issues/58)) ([e112e9c](https://github.com/team-telnyx/telnyx-cli/commit/e112e9c0043cc4dd2b8d0f9bacc5ad02ff303b79))
+
 ## [0.21.0](https://github.com/team-telnyx/telnyx-cli/compare/v0.20.0...v0.21.0) (2026-07-03)
 
 
